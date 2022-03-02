@@ -1,0 +1,12 @@
+FROM ruby:3.1.1
+
+ENV SOURCE_HOME .
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+
+COPY $SOURCE_HOME $APP_HOME
+
+ENV BUNDLE_PATH=/bundle \
+    BUNDLE_BIN=/bundle/bin \
+    GEM_HOME=/bundle
+ENV PATH="${BUNDLE_BIN}:${PATH}"
