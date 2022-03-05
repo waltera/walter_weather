@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
-require "walter_weather"
 require "debug"
 
 require "webmock/rspec"
+require 'simplecov'
+
 WebMock.enable!
+SimpleCov.start
+
+require "walter_weather"
 
 # Support modules
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f }

@@ -14,6 +14,7 @@ group :development, :test do
   gem "rspec"
   gem "rspec-mocks"
   gem "webmock"
+  gem 'simplecov', require: false
 
   # Code Quality
   gem "relaxed-rubocop"
