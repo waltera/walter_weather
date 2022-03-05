@@ -16,12 +16,11 @@ module WalterWeather
       private
 
       def temp
-        body.fetch("main", {}).fetch("temp", nil)
+        body["main"]["temp"]
       end
 
       def description
-        data = body.fetch("weather", []).first || {}
-        data["description"]
+        body["weather"].first["description"]
       end
 
       def city_name
