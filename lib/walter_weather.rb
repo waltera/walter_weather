@@ -10,10 +10,12 @@ require_relative "walter_weather/version"
 require_relative "walter_weather/models/application_record"
 require_relative "walter_weather/models/weather"
 require_relative "walter_weather/models/configuration"
+require_relative "walter_weather/models/result"
 
 # Factories
 require_relative "walter_weather/factories/weather_factory"
 require_relative "walter_weather/factories/forecast_factory"
+require_relative "walter_weather/factories/result_factory"
 
 # Config
 require_relative "walter_weather/config/service"
@@ -24,6 +26,7 @@ require_relative "walter_weather/services/weather_service"
 require_relative "walter_weather/services/forecast_service"
 
 module WalterWeather
-  class Error < StandardError; end
-  # Your code goes here...
+  def self.weather_from_city(city_id)
+    Factories::ResultFactory.new(city_id).perform!
+  end
 end
