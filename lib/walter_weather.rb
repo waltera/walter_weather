@@ -13,6 +13,7 @@ require_relative "walter_weather/models/configuration"
 
 # Factories
 require_relative "walter_weather/factories/weather_factory"
+require_relative "walter_weather/factories/forecast_factory"
 
 # Config
 require_relative "walter_weather/config/service"

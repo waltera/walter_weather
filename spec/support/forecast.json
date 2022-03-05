@@ -1,0 +1,209 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 5,
+  "list": [
+    {
+      "dt": 1646503200,
+      "main": {
+        "temp": 26.51,
+        "feels_like": 26.51,
+        "temp_min": 23.83,
+        "temp_max": 26.51,
+        "pressure": 1016,
+        "sea_level": 1016,
+        "grnd_level": 889,
+        "humidity": 54,
+        "temp_kf": 2.68
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "chuva leve",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 75
+      },
+      "wind": {
+        "speed": 3.98,
+        "deg": 75,
+        "gust": 4.71
+      },
+      "visibility": 10000,
+      "pop": 0.48,
+      "rain": {
+        "3h": 1.23
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2022-03-05 18:00:00"
+    },
+    {
+      "dt": 1646514000,
+      "main": {
+        "temp": 24.25,
+        "feels_like": 24.45,
+        "temp_min": 19.73,
+        "temp_max": 24.25,
+        "pressure": 1014,
+        "sea_level": 1014,
+        "grnd_level": 887,
+        "humidity": 66,
+        "temp_kf": 4.52
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "chuva leve",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 56
+      },
+      "wind": {
+        "speed": 3.16,
+        "deg": 97,
+        "gust": 6.91
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 2.35
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2022-03-05 21:00:00"
+    },
+    {
+      "dt": 1646524800,
+      "main": {
+        "temp": 20.82,
+        "feels_like": 21.05,
+        "temp_min": 17.97,
+        "temp_max": 20.82,
+        "pressure": 1014,
+        "sea_level": 1014,
+        "grnd_level": 888,
+        "humidity": 80,
+        "temp_kf": 2.85
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "chuva leve",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 36
+      },
+      "wind": {
+        "speed": 2.03,
+        "deg": 124,
+        "gust": 5.85
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 0.23
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2022-03-06 00:00:00"
+    },
+    {
+      "dt": 1646535600,
+      "main": {
+        "temp": 17.53,
+        "feels_like": 17.77,
+        "temp_min": 17.53,
+        "temp_max": 17.53,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 889,
+        "humidity": 93,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "nuvens dispersas",
+          "icon": "03n"
+        }
+      ],
+      "clouds": {
+        "all": 40
+      },
+      "wind": {
+        "speed": 3.21,
+        "deg": 103,
+        "gust": 9.39
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2022-03-06 03:00:00"
+    },
+    {
+      "dt": 1646546400,
+      "main": {
+        "temp": 16.44,
+        "feels_like": 16.57,
+        "temp_min": 16.44,
+        "temp_max": 16.44,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 888,
+        "humidity": 93,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "nuvens dispersas",
+          "icon": "03n"
+        }
+      ],
+      "clouds": {
+        "all": 25
+      },
+      "wind": {
+        "speed": 2.09,
+        "deg": 79,
+        "gust": 7.01
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2022-03-06 06:00:00"
+    }
+  ],
+  "city": {
+    "id": 3469058,
+    "name": "Brasília",
+    "coord": {
+      "lat": -15.7797,
+      "lon": -47.9297
+    },
+    "country": "BR",
+    "population": 0,
+    "timezone": -10800,
+    "sunrise": 1646471584,
+    "sunset": 1646516021
+  }
+}

@@ -1,6 +1,9 @@
-module WalterWeather::Models
-  class Weather < ApplicationRecord
+# frozen_string_literal: true
 
-    attr_accessor :temp, :description, :city_name, :date
+module WalterWeather
+  module Models
+    class Weather < ApplicationRecord
+      attr_accessor :temp, :description, :city_name, :date
+    end
   end
 end
