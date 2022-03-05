@@ -21,6 +21,7 @@ require_relative "walter_weather/config/service"
 # Services
 require_relative "walter_weather/services/application_service"
 require_relative "walter_weather/services/weather_service"
+require_relative "walter_weather/services/forecast_service"
 
 module WalterWeather
   class Error < StandardError; end
