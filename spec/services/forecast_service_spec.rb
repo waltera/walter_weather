@@ -5,8 +5,6 @@ RSpec.describe WalterWeather::Services::ForecastService do
     let(:key) { "key" }
     let(:city_id) { 1 }
 
-    let!(:factory_dbl) { double("Teste") }
-
     before do
       WalterWeather::Config::Service.configure do |config|
         config.app_key = key

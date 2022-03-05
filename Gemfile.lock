@@ -89,7 +89,6 @@ DEPENDENCIES
   rake (~> 13.0)
   relaxed-rubocop
   rspec
-  rspec-mocks
   rubocop
   rubocop-performance
   rubocop-rspec
