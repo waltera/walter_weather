@@ -1,8 +1,6 @@
 # WalterWeather
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/walter_weather`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+`walter_wather` is a Ruby wrapper for [OpenWeather's API](https://openweathermap.org/api).
 
 ## Installation
 
@@ -20,15 +18,40 @@ Or install it yourself as:
 
     $ gem install walter_weather
 
+Configure [API Token](https://home.openweathermap.org/api_keys) on `config/initializers/walter_weather.rb`:
+
+    WalterWeather::Config::Service.configure do |config|
+        config.app_key = "YOUR_API_TOKEN_HERE"
+    end
+
 ## Usage
 
-TODO: Write usage instructions here
+    WalterWeather.weather_from_city(city_id)
+Get `city_id` from [Geocoding API](https://openweathermap.org/api/geocoding-api) manually.
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+First clone repo.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Without Docker
+
+Install gem dependencies:
+
+    $ bundle install
+
+Run tests:
+
+    $ rake
+
+### With Docker
+
+Install gem dependencies:
+
+    $ docker-compose run app bundle install
+
+Run tests:
+
+    $ docker-compose run app rake
 
 ## Contributing
 
