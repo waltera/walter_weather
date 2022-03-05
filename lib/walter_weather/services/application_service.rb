@@ -16,7 +16,7 @@ module WalterWeather
       end
 
       def appid
-        ::WalterWeather::Config::Service.instance.appid
+        WalterWeather::Config::Service.instance.appid
       end
 
       def query

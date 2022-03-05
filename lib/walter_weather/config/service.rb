@@ -14,7 +14,7 @@ module WalterWeather
       end
 
       def self.configure(&block)
-        config = ::WalterWeather::Models::Configuration.new
+        config = WalterWeather::Models::Configuration.new
         block.call(config)
         @@instance = new(config)
       end

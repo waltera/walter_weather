@@ -10,7 +10,7 @@ module WalterWeather
       end
 
       def perform!
-        @weather = ::WalterWeather::Models::Weather.new(temp:, description:, city_name:, date:)
+        @weather = WalterWeather::Models::Weather.new(temp:, description:, city_name:, date:)
       end
 
       private

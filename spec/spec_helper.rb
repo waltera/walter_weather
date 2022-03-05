@@ -3,7 +3,7 @@
 require "debug"
 
 require "webmock/rspec"
-require 'simplecov'
+require "simplecov"
 
 WebMock.enable!
 SimpleCov.start

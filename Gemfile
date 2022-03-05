@@ -12,8 +12,8 @@ group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
 
   gem "rspec"
+  gem "simplecov", require: false
   gem "webmock"
-  gem 'simplecov', require: false
 
   # Code Quality
   gem "relaxed-rubocop"
