@@ -6,6 +6,8 @@ RSpec.describe WalterWeather do
   end
 
   describe "#weather_from_city" do
+    subject(:result) { described_class.weather_from_city(city_id) }
+
     let(:key) { "key" }
     let(:city_id) { 1 }
 
@@ -17,8 +19,6 @@ RSpec.describe WalterWeather do
       stub_weather_request(key, city_id)
       stub_forecast_request(key, city_id)
     end
-
-    subject(:result) { WalterWeather.weather_from_city(city_id) }
 
     it "must fill result weather" do
       expect(result.weather.description).to eq("chuva leve")

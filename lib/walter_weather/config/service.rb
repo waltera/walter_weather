@@ -13,9 +13,9 @@ module WalterWeather
         @@instance
       end
 
-      def self.configure(&block)
+      def self.configure
         config = WalterWeather::Models::Configuration.new
-        block.call(config)
+        yield config if block_given?
         @@instance = new(config)
       end
 
