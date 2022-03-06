@@ -45,6 +45,10 @@ Run tests:
 
 ### With Docker
 
+Build image:
+
+    $ docker-compose build
+
 Install gem dependencies:
 
     $ docker-compose run app bundle install
