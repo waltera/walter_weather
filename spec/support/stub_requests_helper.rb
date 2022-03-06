@@ -18,7 +18,7 @@ module StubRequestsHelper
   end
 
   def stub_forecast_request(app_key, city_id)
-    url = "http://api.openweathermap.org/data/2.5/forecast?appid=#{app_key}&id=#{city_id}&lang=pt_br&units=metric"
+    url = "http://api.openweathermap.org/data/2.5/forecast?appid=#{app_key}&id=#{city_id}&lang=pt_br&units=metric&cnt=5"
     headers = {
       "Accept" => "*/*",
       "Accept-Encoding" => "gzip;q=1.0,deflate;q=0.6,identity;q=0.3",
